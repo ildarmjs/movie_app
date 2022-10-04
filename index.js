@@ -47,28 +47,28 @@ async function loadMovies(searchTerm) {
 				header.style.display = 'none'
 				document.body.style.backgroundColor = 'rgb(0, 0, 0, 0.8)'
 				div.innerHTML = `
-				                    <div class="modal__row">
-                        <div class="modal__col">
-                            <div class="modal__image">
-                                <img src="${data.Poster}" alt="">
-                            </div>
-                        </div>
-                        <div class="modal__col">
-                            <div class="modal__description">
-                                <div class="modal__title modal-item"><span>Title:</span> ${data.Title}</div>
-                                <div class="modal__year modal-item"><span>Released:</span> ${data.Title}</div>
-                                <div class="modal__genre modal-item"><span>Genre:</span> ${data.Genre}</div>
-                                <div class="modal__country modal-item"><span>Country:</span> ${data.Country}</div>
-                                <div class="modal__director modal-item"><span>Director:</span> ${data.Director}</div>
-                                <div class="modal__writer modal-item"><span>Writer:</span> ${data.Writer}</div>
-                                <div class="modal__actors modal-item"><span>Actors:</span> ${data.Actors}</div>
-                                <div class="modal__awards modal-item"><span>Awards:</span> ${data.Awards}</div>
-                            </div>
-                            <div class="modal__btn">
-                                <button id="close">Close</button>
-                            </div>
-                        </div>
-                    </div> 
+											<div class="modal__row">
+								<div class="modal__col">
+									<div class="modal__image">
+										<img src="${data.Poster}" alt="">
+									</div>
+								</div>
+								<div class="modal__col">
+									<div class="modal__description">
+										<div class="modal__title modal-item"><span>Title:</span> ${data.Title}</div>
+										<div class="modal__year modal-item"><span>Released:</span> ${data.Title}</div>
+										<div class="modal__genre modal-item"><span>Genre:</span> ${data.Genre}</div>
+										<div class="modal__country modal-item"><span>Country:</span> ${data.Country}</div>
+										<div class="modal__director modal-item"><span>Director:</span> ${data.Director}</div>
+										<div class="modal__writer modal-item"><span>Writer:</span> ${data.Writer}</div>
+										<div class="modal__actors modal-item"><span>Actors:</span> ${data.Actors}</div>
+										<div class="modal__awards modal-item"><span>Awards:</span> ${data.Awards}</div>
+									</div>
+									<div class="modal__btn">
+										<button id="close">Close</button>
+									</div>
+								</div>
+							</div> 
 				`
 				document.body.append(div)
 				const closeModal = document.querySelectorAll('#close')

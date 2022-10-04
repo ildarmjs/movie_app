@@ -37,7 +37,7 @@ async function loadMovies(searchTerm) {
 			console.log(btn.dataset.idx)
 
 			try {
-				const URL = `http://www.omdbapi.com/?i=${btn.dataset.idx}&apikey=fc1fef96`
+				const URL = `https://www.omdbapi.com/?i=${btn.dataset.idx}&apikey=fc1fef96`
 				const res = await fetch(`${URL}`)
 				const data = await res.json()
 				let div = document.createElement('div')

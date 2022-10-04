@@ -47,7 +47,7 @@ async function loadMovies(searchTerm) {
 				header.style.display = 'none'
 				document.body.style.backgroundColor = 'rgb(0, 0, 0, 0.8)'
 				div.innerHTML = `
-											<div class="modal__row">
+							<div class="modal__row">
 								<div class="modal__col">
 									<div class="modal__image">
 										<img src="${data.Poster}" alt="">
@@ -69,6 +69,7 @@ async function loadMovies(searchTerm) {
 									</div>
 								</div>
 							</div> 
+							
 				`
 				document.body.append(div)
 				const closeModal = document.querySelectorAll('#close')

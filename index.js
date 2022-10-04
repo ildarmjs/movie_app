@@ -2,8 +2,9 @@
 // details: http://www.omdbapi.com/?i=tt3896198&apikey=fc1fef96
 
 async function loadMovies(searchTerm) {
-	const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`
-	const res = await fetch(`${URL}`)
+	const res = await fetch(
+		`https://omdbapi.com/?s=${searchTerm}&page=1&apikey=fc1fef96`
+	)
 	const data = await res.json()
 	text.value = ''
 	const movieRow = document.querySelector('.movie__row')
@@ -37,8 +38,9 @@ async function loadMovies(searchTerm) {
 			console.log(btn.dataset.idx)
 
 			try {
-				const URL = `https://www.omdbapi.com/?i=${btn.dataset.idx}&apikey=fc1fef96`
-				const res = await fetch(`${URL}`)
+				const res = await fetch(
+					`https://www.omdbapi.com/?i=${btn.dataset.idx}&apikey=fc1fef96`
+				)
 				const data = await res.json()
 				let div = document.createElement('div')
 				div.className = 'modal'

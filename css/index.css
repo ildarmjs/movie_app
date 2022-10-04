@@ -1,0 +1,161 @@
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: rgb(0, 0, 0, 0.4);
+}
+
+[class*='__container'] {
+	max-width: 1145px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	margin-bottom: 20px;
+}
+.title {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 34px;
+	font-weight: bold;
+}
+.header {
+	margin-top: 30px;
+	display: flex;
+
+	justify-content: center;
+	text-align: center;
+}
+
+.form {
+	border-radius: 10px;
+	padding: 40px 70px;
+	border: 1px solid #000;
+	background: #eee;
+}
+
+.text-movie {
+	margin-bottom: 20px;
+}
+
+.text-movie input {
+	padding: 10px;
+	font-size: 16px;
+    transition: all 0.4s ease 0s;
+    border-radius: 7px;
+}
+.text-movie input:focus {
+    border: 1.5px solid #424242;
+    border-radius: 7px;
+    transition: all 0.4s ease 0s;
+
+}
+
+.btn-movie button {
+	padding: 16px 35px;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid #000;
+	border-radius: 15px;
+	background: #828282;
+    color: #fff;
+    transition: background 0.4s ease 0s;
+}
+.btn-movie button:hover {
+    background: #424242;
+    transition: background 0.4s ease 0s;
+
+}
+
+.movie__row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.movie__col {
+	padding: 10px;
+	display: flex;
+	width: 30%;
+	border: 1px solid #000;
+	border-radius: 10px;
+	margin-bottom: 20px;
+    background: #f7f7f7;
+}
+
+.movie__image {
+	flex: 0 1 50%;  
+}
+
+.movie__image img {
+	width: 100%;
+    object-fit: cover;
+}
+
+.movie__description {
+	margin-top: 30px;
+	flex: 0 1 50%;
+	margin-left: 20px;
+}
+
+.movie__title {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.movie__year {
+	font-style: italic;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.movie__button,
+#close {
+	padding: 6px 12px;
+	background: #000;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+.modal {
+	display: none;
+	width: 800px;
+	border: 1px solid #000;
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	padding: 16px;
+	border-radius: 10px;
+	height: auto;
+}
+.modal__row {
+	display: flex;
+	margin: 0 - 10px;
+}
+.modal__col {
+	padding: 0 10px;
+}
+.modal__description {
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+.modal-item {
+	padding-bottom: 10px;
+	font-size: 18px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #000;
+}
+.modal-item:last-child {
+	margin-bottom: 0;
+}
+.modal-item > span {
+	font-weight: bold;
+	font-size: 20px;
+}
+.modal__btn > button {
+	border-radius: 10px;
+}
